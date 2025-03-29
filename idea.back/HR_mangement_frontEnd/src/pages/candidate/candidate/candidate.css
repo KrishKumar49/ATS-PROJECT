@@ -1,0 +1,78 @@
+.candidate-page {
+  height: 100vh;
+  background: url('./undraw_friendship_chd3.png') no-repeat center center/cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  opacity: 0.9;
+  position: relative;
+  background-size: cover;
+}
+
+.container-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  max-width: 800px;
+  width: 100%;
+}
+
+.add-candidate, .search-candidate {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+  min-width: 250px;
+  max-width: 350px;
+}
+
+.prime-button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 20px 30px;
+  font-size: 18px;
+  border-radius: 12px;
+  cursor: pointer;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  width: 100%;
+  width: 400px;
+  max-width: 400px;
+  
+}
+
+.prime-button i {
+  display: block;
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+
+.prime-button:hover {
+  background-color: #0056b3;
+  transform: scale(1.05);
+}
+
+.prime-button span {
+  display: block;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.candidate-page::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+

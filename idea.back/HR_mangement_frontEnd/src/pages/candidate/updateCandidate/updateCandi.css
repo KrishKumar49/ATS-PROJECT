@@ -1,0 +1,80 @@
+.edit-candidate-container {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    font-family: 'Arial', sans-serif;
+}
+
+.edit-candidate-container h2 {
+    text-align: center;
+    font-size: 24px;
+    color: #007bff;
+    margin-bottom: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+label {
+    font-size: 16px;
+    color: #555;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+input, select {
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+    transition: border-color 0.3s;
+}
+
+input:focus, select:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+.error {
+    color: #d9534f;
+    font-size: 13px;
+    margin-top: 5px;
+    font-style: italic;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+button.btn-save {
+    background-color: #28a745;
+    color: white;
+}
+
+button.btn-save:hover {
+    background-color: #218838;
+    transform: scale(1.05);
+}
+
+button.btn-cancel {
+    background-color: #dc3545;
+    color: white;
+}
+
+button.btn-cancel:hover {
+    background-color: #c82333;
+    transform: scale(1.05);
+}

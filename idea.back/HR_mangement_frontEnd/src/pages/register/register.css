@@ -1,0 +1,304 @@
+/* body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    background-color: #f4f6f9;
+}
+
+.home-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.content-wrapper {
+    display: flex;
+    flex-direction: row;
+    width: 800px;
+    height: 500px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 15px;
+    overflow: hidden;
+    background-color: #fff;
+}
+
+.register-form-wrapper {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+}
+
+.register-form {
+    text-align: center;
+    width: 100%;
+    max-width: 320px;
+}
+
+.register-title {
+    font-size: 24px;
+    margin-bottom: 20px;
+    font-weight: bold;
+    color: #2c3e50;
+}
+
+.password-input-container {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.password-input {
+    width: 100%;
+    padding: 12px 15px;
+    border: 1px solid #dfe6e9;
+    border-radius: 8px;
+    background-color: #ecf0f1;
+    color: #2c3e50;
+    font-size: 14px;
+}
+
+.password-input:focus {
+    outline: none;
+    border-color: #3498db;
+}
+
+.eye-icon {
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    color: #95a5a6;
+}
+
+.eye-icon:hover {
+    color: #3498db;
+}
+
+.btn-primary {
+    width: 100%;
+    padding: 12px 15px;
+    background-color: #3498db;
+    border: none;
+    border-radius: 8px;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: #2980b9;
+}
+
+.login-link-text {
+    font-size: 14px;
+    color: #7f8c8d;
+    margin-top: 20px;
+}
+
+.login-link-text a {
+    color: #3498db;
+    text-decoration: none;
+}
+
+.login-link-text a:hover {
+    text-decoration: underline;
+}
+
+.background-image {
+    flex: 1;
+    background: url('./undraw_working-late_nh09.png') no-repeat center center/cover;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Overall Page Styles */
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    background-color: #f4f6f9;
+}
+
+.home-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.content-wrapper {
+    display: flex;
+    flex-direction: row;
+    width: 1000px; /* Increased width */
+    max-width: 100%; /* Ensures it’s responsive */
+    height: 600px; /* Increased height to give more space */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 15px;
+    overflow: hidden;
+    background-color: #fff;
+}
+
+.register-form-wrapper {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.register-form {
+    text-align: center;
+    width: 100%;
+    max-width: 320px;
+    padding: 20px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.register-title {
+    font-size: 24px;
+    margin-bottom: 20px;
+    font-weight: bold;
+    color: #2c3e50;
+}
+
+.password-input-container {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.password-input {
+    width: 100%;
+    padding: 12px 15px;
+    border: 1px solid #dfe6e9;
+    border-radius: 8px;
+    background-color: #ecf0f1;
+    color: #2c3e50;
+    font-size: 14px;
+}
+
+.password-input:focus {
+    outline: none;
+    border-color: #3498db;
+}
+
+.eye-icon {
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    color: #95a5a6;
+}
+
+.eye-icon:hover {
+    color: #3498db;
+}
+
+.btn-primary {
+    width: 100%;
+    padding: 12px 15px;
+    background-color: #3498db;
+    border: none;
+    border-radius: 8px;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: #2980b9;
+}
+
+.login-link-text {
+    font-size: 14px;
+    color: #7f8c8d;
+    margin-top: 20px;
+}
+
+.login-link-text a {
+    color: #3498db;
+    text-decoration: none;
+}
+
+.login-link-text a:hover {
+    text-decoration: underline;
+}
+
+.background-image {
+    flex: 1;
+    background: url('./undraw_working-late_nh09.png') no-repeat center center/cover;
+    height: 100%; /* Ensure the background image fills the div */
+    border-top-left-radius: 15px; /* Rounded corner on top left */
+    border-bottom-left-radius: 15px; /* Rounded corner on bottom left */
+}
+
+/* Error and Success Message Styles */
+.error-message {
+    color: #e63946;
+    margin-bottom: 10px;
+    font-size: 14px;
+    font-weight: 600;
+    text-align: center;
+}
+
+.success-message {
+    color: #2ecc71;
+    margin-bottom: 10px;
+    font-size: 14px;
+    font-weight: 600;
+    text-align: center;
+}

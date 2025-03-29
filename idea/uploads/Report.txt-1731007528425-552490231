@@ -1,0 +1,139 @@
+getTimeToHireReport:
+
+It fetches all job postings.
+For each job, it calculates the average number of days between the date a candidate applied and the date they were hired (i.e., "Time-to-Hire").
+Sends a report back with the job titles and their corresponding time-to-hire.
+getOpenPositionsReport:
+
+It fetches all open jobs and calculates how many days they have been open since posting.
+Provides the number of applicants for each job and how long it's been open.
+getApplicantProgressReport:
+
+This tracks the number of candidates in different stages (e.g., Applied, Interviewed, Hired, Rejected).
+Useful for understanding bottlenecks in the recruitment pipeline.
+getHiringEfficiencyReport:
+
+This calculates the hiring efficiency for each job.
+It compares the number of applicants hired against the total number of applications to give a percentage value.
+
+1. getTimeToHireReport:
+Purpose: This report calculates how long it takes, on average, to hire a candidate for each job.
+
+Explanation:
+
+The function retrieves all the jobs from the database.
+For each job, it checks the candidates who have the status Hired.
+It calculates the time difference between when each candidate applied (appliedAt) and when they were hired (updatedAt).
+It then computes the average time taken to hire a candidate for that job.
+The results are returned as a list of jobs with the corresponding average time to hire.
+Example:
+
+Suppose you have 2 jobs: "Software Engineer" and "Marketing Manager".
+For "Software Engineer", if 2 candidates were hired, one took 5 days to get hired, and the other took 7 days.
+The average time to hire would be (5 + 7) / 2 = 6 days.
+The report would look like this:
+json
+Copy code
+{
+    "report": [
+        {
+            "jobTitle": "Software Engineer",
+            "averageTimeToHire": "6.00"
+        },
+        {
+            "jobTitle": "Marketing Manager",
+            "averageTimeToHire": "4.00"
+        }
+    ]
+}
+2. getOpenPositionReport:
+Purpose: This report shows all currently open jobs and how many days they have been open.
+
+Explanation:
+
+It retrieves all jobs that are still open (status: 'Open').
+For each job, it calculates the number of days it has been open by subtracting the postedAt date from the current date.
+It returns a list of jobs with their titles, the date they were posted, and how many days they've been open.
+Example:
+
+If "Software Engineer" was posted 10 days ago, and "Marketing Manager" was posted 5 days ago, the report will show:
+json
+Copy code
+{
+    "report": [
+        {
+            "jobTitle": "Software Engineer",
+            "postedAt": "2023-10-01T00:00:00.000Z",
+            "daysOpen": 10
+        },
+        {
+            "jobTitle": "Marketing Manager",
+            "postedAt": "2023-10-06T00:00:00.000Z",
+            "daysOpen": 5
+        }
+    ]
+}
+3. getApplicantProgressReport:
+Purpose: This report shows the progress of candidates for each job (how many applied, were interviewed, and got hired).
+
+Explanation:
+
+The function retrieves all jobs from the database.
+For each job, it counts how many candidates applied (status: 'Applied'), how many were interviewed (status: 'Interviewed'), and how many were hired (status: 'Hired').
+It returns a list of jobs along with these counts.
+Example:
+
+For the "Software Engineer" job:
+10 candidates applied.
+4 were interviewed.
+2 were hired.
+The report will look like this:
+json
+Copy code
+{
+    "report": [
+        {
+            "jobTitle": "Software Engineer",
+            "total": 10,
+            "applied": 10,
+            "intervied": 4,
+            "hired": 2
+        }
+    ]
+}
+4. getHiringEfficiencyReport:
+Purpose: This report calculates the hiring efficiency, which is the percentage of candidates hired out of the total applicants for each job.
+
+Explanation:
+
+For each job, it checks how many candidates applied and how many were hired.
+It calculates the efficiency as (number of hired candidates / total number of candidates) * 100.
+If no candidates applied for a job, the efficiency is set to 0%.
+Example:
+
+For the "Software Engineer" job:
+10 candidates applied.
+2 candidates were hired.
+The hiring efficiency is (2 / 10) * 100 = 20%.
+The report will look like this:
+json
+Copy code
+{
+    "report": [
+        {
+            "jobTitle": "Software Engineer",
+            "totalApplications": 10,
+            "hired": 2,
+            "efficiency": "20.00%"
+        }
+    ]
+}
+
+
+login intial 
+localstorage
+token
+error on wrong entry
+asyn await function {try and catch }
+
+

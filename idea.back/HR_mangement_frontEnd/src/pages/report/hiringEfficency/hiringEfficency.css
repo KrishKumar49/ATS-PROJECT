@@ -1,0 +1,113 @@
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  background-color: #f5f7fa;
+}
+
+h2 {
+  text-align: center;
+  color: #007bff;
+  margin-top: 20px;
+  font-size: 28px;
+}
+
+h3 {
+  color: #007bff;
+  margin-bottom: 10px;
+  font-size: 22px;
+}
+
+h4 {
+  color: #333;
+  margin: 15px 0;
+  font-size: 18px;
+}
+
+.chart-container {
+  max-width: 800px;
+  margin: 30px auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.chart-container canvas {
+  max-width: 100%;
+  height: auto;
+}
+
+.job-section {
+  margin: 20px auto;
+  padding: 20px;
+  max-width: 800px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.job-section p {
+  color: #555;
+  margin: 10px 0;
+}
+
+.job-section table {
+  margin-top: 10px;
+  border-collapse: collapse;
+  width: 100%;
+  background-color: #f9f9f9;
+  border-radius: 5px;
+  overflow: hidden;
+  text-align: left;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.job-section table th,
+.job-section table td {
+  padding: 10px 15px;
+  font-size: 14px;
+}
+
+.job-section table th {
+  background-color: #007bff;
+  color: white;
+}
+
+.job-section table tbody tr:hover {
+  background-color: #f1f5ff;
+}
+
+.fa-spinner {
+  color: #007bff;
+  margin-left: 10px;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+      transform: rotate(0deg);
+  }
+  100% {
+      transform: rotate(360deg);
+  }
+}
+
+@media (max-width: 768px) {
+  .chart-container,
+  .job-section {
+      max-width: 90%;
+      padding: 15px;
+  }
+
+  h2 {
+      font-size: 24px;
+  }
+
+  h3 {
+      font-size: 20px;
+  }
+
+  h4 {
+      font-size: 16px;
+  }
+}

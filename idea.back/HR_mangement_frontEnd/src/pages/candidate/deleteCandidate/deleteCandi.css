@@ -1,0 +1,49 @@
+.delete-candidate-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    margin: 1rem auto;
+}
+
+.delete-candidate-container h2 {
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+.delete-candidate-container p {
+    margin-bottom: 1rem;
+    font-size: 1rem;
+}
+
+.btn-delete-confirm,
+.btn-cancel {
+    padding: 0.8rem 1.5rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-right: 1rem;
+}
+
+.btn-delete-confirm {
+    background-color: #e3342b;
+    color: #fff;
+}
+
+.btn-cancel {
+    background-color: #ddd;
+    color: #333;
+}
+
+.btn-delete-confirm:hover,
+.btn-cancel:hover {
+    opacity: 0.8;
+}
+
+.btn-delete-confirm:focus,
+.btn-cancel:focus {
+    outline: 2px solid #007bff;
+}

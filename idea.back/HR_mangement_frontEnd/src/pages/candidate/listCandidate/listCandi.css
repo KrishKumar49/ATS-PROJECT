@@ -1,0 +1,32 @@
+.candidate-list-container {
+    margin: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+th {
+    background-color: #f4f4f4;
+}
+
+.btn-view, .btn-edit, .btn-delete, .btn-add {
+    padding: 8px 12px;
+    margin: 5px;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 4px;
+}
+
+.btn-view { background-color: #007bff; }
+.btn-edit { background-color: #ffc107; }
+.btn-delete { background-color: #dc3545; }
+.btn-add { background-color: #28a745; display: block; width: fit-content; }
